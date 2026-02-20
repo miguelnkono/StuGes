@@ -11,7 +11,7 @@ public final class DatabaseConfig {
 
     private static final String USER     = System.getenv().getOrDefault("DB_USER", "miguel_dev");
     private static final String URL      = System.getenv().getOrDefault("DB_URL",  "jdbc:mysql://localhost:3306/student_management?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=utf8");
-    private static final String PASSWORD = System.getenv().getOrDefault("DB_PASS", "Dorine2004");
+    private static final String PASSWORD = System.getenv().getOrDefault("DB_PASS", ""); // add a password here before launching the application.
 
     private static volatile DatabaseConfig instance;
 
